@@ -6,7 +6,13 @@ import { RotateCw } from '@repo/shadcn/lucide-react';
 import { useRouter } from 'next/navigation';
 import { useEffect, useTransition } from 'react';
 
-const Error = ({ error, reset }: { error: Error; reset: () => void }) => {
+export default function Error({
+  error,
+  reset,
+}: {
+  error: Error;
+  reset: () => void;
+}) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   useEffect(() => {
@@ -32,6 +38,4 @@ const Error = ({ error, reset }: { error: Error; reset: () => void }) => {
       </Button>
     </div>
   );
-};
-
-export default Error;
+}

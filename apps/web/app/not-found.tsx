@@ -5,7 +5,7 @@ import { RotateCw } from '@repo/shadcn/lucide-react';
 import { useRouter } from 'next/navigation';
 import { useTransition } from 'react';
 
-const NotFound = () => {
+export default function NotFound() {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   return (
@@ -24,6 +24,4 @@ const NotFound = () => {
       </Button>
     </div>
   );
-};
-
-export default NotFound;
+}
