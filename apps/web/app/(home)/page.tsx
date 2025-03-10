@@ -1,20 +1,10 @@
-// import { Montserrat } from 'next/font/google';
+import { formatDate } from '@repo/utils';
 
-import { getAllUsers } from '@/server/home.server';
-
-// const RobotoMono = Montserrat({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   weight: ['900'],
-// });
-
-export default async function Page() {
-  const { data } = await getAllUsers();
-
+export default function Page() {
   return (
-    <section className="bg-background min-h-dvh flex flex-col justify-center items-center">
+    <section className="min-h-dvh flex flex-col justify-center items-center">
       Hello world
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <span>{formatDate(new Date())}</span>
     </section>
   );
 }
