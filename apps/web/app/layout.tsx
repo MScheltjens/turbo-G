@@ -22,17 +22,17 @@ export const metadata = {
   },
   openGraph: {
     type: 'website',
-    title: 'Turbo NPN',
-    description: 'Turbo NPN is the name of the website',
-    url: 'https://turbo-npn.onrender.com',
-    images: [
-      {
-        url: '/og-bg.png',
-        width: 1200,
-        height: 628,
-        alt: 'Turbo NPN Logo',
-      },
-    ],
+    title: 'Turbo-G',
+    description: 'Gismo goes full turbo',
+    // url: 'https://turbo-npn.onrender.com',
+    // images: [
+    //   {
+    //     url: '/og-bg.png',
+    //     width: 1200,
+    //     height: 628,
+    //     alt: 'Turbo NPN Logo',
+    //   },
+    // ],
   },
 } satisfies Metadata;
 
